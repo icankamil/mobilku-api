@@ -5,12 +5,12 @@ module.exports = {
   create(payload, photo5, photo10) {
     // console.log(payload);
     return Profile.create({
-      nama: payload.nama,
-      tanggallahir: payload.tanggallahir,
+      nama: payload.name,
+      tanggallahir: payload.date,
       usia: payload.usia,
-      whatsapp: payload.whatsapp,
-      asalkota: payload.asalkota,
-      pendidikan: payload.pendidikan,
+      whatsapp: payload.mobile,
+      asalkota: payload.city,
+      pendidikan: payload.education,
       foto500: photo5,
       foto1000: photo10,
     })

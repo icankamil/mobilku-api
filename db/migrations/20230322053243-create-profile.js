@@ -9,28 +9,28 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER,
       },
-      nama: {
+      name: {
         type: Sequelize.TEXT,
       },
-      tanggallahir: {
+      date: {
         type: Sequelize.DATE,
       },
       usia: {
         type: Sequelize.INTEGER,
       },
-      whatsapp: {
+      mobile: {
         type: Sequelize.STRING,
       },
-      asalkota: {
+      city: {
         type: Sequelize.STRING,
       },
-      pendidikan: {
+      education: {
         type: Sequelize.STRING,
       },
-      foto500: {
+      image: {
         type: Sequelize.STRING,
       },
-      foto1000: {
+      image1000: {
         type: Sequelize.STRING,
       },
       createdAt: {

@@ -3,9 +3,9 @@ const profileService = require("../services/profileService");
 module.exports = {
   async insert(req, res) {
     // console.log(req.files);
-    const { gambar } = req.files;
+    const { image } = req.files;
     profileService
-      .create(req.body, gambar, req.protocol, req.get("host"))
+      .create(req.body, image, req.protocol, req.get("host"))
       .then((result) => {
         //console.log(password)
         typeof result == typeof "string"

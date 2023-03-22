@@ -13,14 +13,14 @@ module.exports = (sequelize, DataTypes) => {
   }
   Profile.init(
     {
-      nama: DataTypes.TEXT,
-      tanggallahir: DataTypes.DATEONLY,
+      name: DataTypes.TEXT,
+      date: DataTypes.DATEONLY,
       usia: DataTypes.INTEGER,
-      whatsapp: DataTypes.STRING,
-      asalkota: DataTypes.STRING,
-      pendidikan: DataTypes.STRING,
-      foto500: DataTypes.STRING,
-      foto1000: DataTypes.STRING,
+      mobile: DataTypes.STRING,
+      city: DataTypes.STRING,
+      education: DataTypes.STRING,
+      image: DataTypes.STRING,
+      image1000: DataTypes.STRING,
     },
     {
       sequelize,

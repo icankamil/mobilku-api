@@ -3,6 +3,9 @@
 
 API Management data mobilku menggunakan Nodejs, dengan dukungan expressjs, sequelize, express-fileupload, sharp, body-parser, cookie-parser dan mysql, dengan menerapkan design pattern service repository
 
+## API Collection
+API Collection terdapat dalam repo ini bernama APICollection.json
+
 ## API Endpoint
 Insert : ```POST | http://host/insert```
 

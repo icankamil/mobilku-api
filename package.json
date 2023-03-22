@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon -q bin/www"
   },
   "keywords": [
     "api",
@@ -14,13 +15,16 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
+    "express-fileupload": "^1.4.0",
     "mariadb": "^3.1.1",
     "morgan": "^1.10.0",
     "multer": "^1.4.5-lts.1",
     "mysql2": "^3.2.0",
+    "nodemon": "^2.0.21",
     "sequelize": "^6.29.3",
     "sequelize-cli": "^6.6.0",
     "sharp": "^0.31.3"

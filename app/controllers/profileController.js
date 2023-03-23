@@ -29,7 +29,7 @@ module.exports = {
     profileService.get(id).then((result) => {
       //console.log(result);
       typeof result != typeof "string"
-        ? res.status(200).send(result)
+        ? res.status(200).json({ data: result })
         : res.status(400).json(`${result}`);
     });
   },
@@ -38,7 +38,7 @@ module.exports = {
     profileService.getAll().then((result) => {
       //console.log(result);
       typeof result != typeof "string"
-        ? res.status(200).json(result)
+        ? res.status(200).json({ data: result })
         : res.status(400).json(`${result}`);
     });
   },

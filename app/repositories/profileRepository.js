@@ -5,14 +5,14 @@ module.exports = {
   create(payload, photo5, photo10) {
     // console.log(payload);
     return Profile.create({
-      nama: payload.name,
-      tanggallahir: payload.date,
+      name: payload.name,
+      date: payload.date,
       usia: payload.usia,
-      whatsapp: payload.mobile,
-      asalkota: payload.city,
-      pendidikan: payload.education,
-      foto500: photo5,
-      foto1000: photo10,
+      mobile: payload.mobile,
+      city: payload.city,
+      education: payload.education,
+      image: photo5,
+      image1000: photo10,
     })
       .then((response) => response)
       .catch((err) => err);
@@ -32,8 +32,8 @@ module.exports = {
   updateimg(payload, photo500, photo1000, id) {
     return Profile.update(
       {
-        foto500: photo500,
-        foto1000: photo1000,
+        image: photo500,
+        image1000: photo1000,
         ...payload,
       },
       {
@@ -57,13 +57,13 @@ module.exports = {
   getAll() {
     return Profile.findAll({
       attributes: [
-        "nama",
-        "tanggallahir",
+        "name",
+        "date",
         "usia",
-        "whatsapp",
-        "asalkota",
-        "pendidikan",
-        "foto500",
+        "mobile",
+        "city",
+        "education",
+        "image",
       ],
     })
       .then((response) => response)
